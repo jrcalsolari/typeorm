@@ -43,6 +43,7 @@ export class SchemaDropCommand implements yargs.CommandModule {
             console.log(
                 chalk.green("Database schema has been successfully dropped."),
             )
+            process.exit(0)
         } catch (err) {
             PlatformTools.logCmdErr("Error during schema drop:", err)
 

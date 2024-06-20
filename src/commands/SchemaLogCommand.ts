@@ -85,6 +85,7 @@ export class SchemaLogCommand implements yargs.CommandModule {
                 })
             }
             await dataSource.destroy()
+            process.exit(0)
         } catch (err) {
             if (dataSource)
                 PlatformTools.logCmdErr(

@@ -60,6 +60,7 @@ export class MigrationCreateCommand implements yargs.CommandModule {
                     fullPath + (args.outputJs ? ".js" : ".ts"),
                 )} has been generated successfully.`,
             )
+            process.exit(0)
         } catch (err) {
             PlatformTools.logCmdErr("Error during migration creation:", err)
             process.exit(1)

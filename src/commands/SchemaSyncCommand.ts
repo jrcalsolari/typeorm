@@ -43,6 +43,7 @@ export class SchemaSyncCommand implements yargs.CommandModule {
             console.log(
                 chalk.green("Schema synchronization finished successfully."),
             )
+            process.exit(0)
         } catch (err) {
             PlatformTools.logCmdErr("Error during schema synchronization:", err)
 

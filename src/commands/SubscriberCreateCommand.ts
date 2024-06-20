@@ -38,6 +38,7 @@ export class SubscriberCreateCommand implements yargs.CommandModule {
                     )} has been created successfully.`,
                 ),
             )
+            process.exit(0)
         } catch (err) {
             PlatformTools.logCmdErr("Error during subscriber creation:")
             process.exit(1)

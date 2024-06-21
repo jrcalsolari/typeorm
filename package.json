@@ -14,26 +14,26 @@
   },
   "exports": {
     ".": {
-      "types": "./index.d.ts",
+      "types": "./build/src/index.d.ts",
       "node": {
-        "import": "./index.mjs",
-        "require": "./index.js",
-        "types": "./index.d.ts"
+        "import": "./build/src/index.mjs",
+        "require": "./build/src/index.js",
+        "types": "./build/src/index.d.ts"
       },
       "browser": {
-        "require": "./index.js",
-        "import": "./browser/index.js",
-        "default": "./index.js"
+        "require": "./build/src/index.js",
+        "import": "./build/src/browser/index.js",
+        "default": "./build/src/index.js"
       }
     },
     "./browser": {
-      "types": "./index.d.ts",
-      "default": "./browser/index.js"
+      "types": "./build/src/index.d.ts",
+      "default": "./build/src/browser/index.js"
     },
-    "./*.js": "./*.js",
+    "./*.js": "./build/src/*.js",
     "./*": {
-      "require": "./*.js",
-      "import": "./*"
+      "require": "./build/src/*.js",
+      "import": "./build/src/*"
     }
   },
   "main": "./build/src/index.js",
@@ -246,7 +246,8 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write --end-of-line auto \"./src/**/*.ts\" \"./test/**/*.ts\" \"./sample/**/*.ts\"",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
-    "build": "rimraf ./build && tsc"
+    "build": "rimraf ./build && tsc",
+    "prepare": "npm run build"
   },
   "bin": {
     "typeorm": "./cli.js",

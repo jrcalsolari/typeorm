@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Post = void 0;
+const tslib_1 = require("tslib");
+const src_1 = require("../../../../src");
+let Post = class Post extends src_1.BaseEntity {
+};
+exports.Post = Post;
+tslib_1.__decorate([
+    (0, src_1.PrimaryGeneratedColumn)(),
+    tslib_1.__metadata("design:type", Number)
+], Post.prototype, "id", void 0);
+tslib_1.__decorate([
+    (0, src_1.Column)({ type: "varchar", unique: true }),
+    tslib_1.__metadata("design:type", String)
+], Post.prototype, "title", void 0);
+tslib_1.__decorate([
+    (0, src_1.Column)({ type: "varchar" }),
+    tslib_1.__metadata("design:type", String)
+], Post.prototype, "description", void 0);
+tslib_1.__decorate([
+    (0, src_1.UpdateDateColumn)(),
+    tslib_1.__metadata("design:type", Date)
+], Post.prototype, "updated_at", void 0);
+exports.Post = Post = tslib_1.__decorate([
+    (0, src_1.Entity)()
+], Post);
+//# sourceMappingURL=Post.js.map

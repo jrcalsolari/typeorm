@@ -1,0 +1,1 @@
+{"version":3,"file":"Foo.js","sourceRoot":"","sources":["../../../../../test/github-issues/4060/entity/Foo.ts"],"names":[],"mappings":";;;;AAAA,yCAA+D;AAGxD,IAAM,GAAG,GAAT,MAAM,GAAG;CAMf,CAAA;AANY,kBAAG;AAEZ;IADC,IAAA,mBAAa,EAAC,EAAE,IAAI,EAAE,WAAW,EAAE,MAAM,EAAE,EAAE,EAAE,CAAC;sCAC7C,MAAM;+BAAA;AAGV;IADC,IAAA,YAAM,GAAE;;iCACG;cALH,GAAG;IADf,IAAA,YAAM,GAAE;GACI,GAAG,CAMf"}

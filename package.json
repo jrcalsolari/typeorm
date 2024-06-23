@@ -250,9 +250,9 @@
     "prepare": "npm run build"
   },
   "bin": {
-    "typeorm": "./cli.js",
-    "typeorm-ts-node-commonjs": "./cli-ts-node-commonjs.js",
-    "typeorm-ts-node-esm": "./cli-ts-node-esm.js"
+    "typeorm": "./build/src/cli.js",
+    "typeorm-ts-node-commonjs": "./build/src/cli-ts-node-commonjs.js",
+    "typeorm-ts-node-esm": "./build/src/cli-ts-node-esm.js"
   },
   "funding": "https://opencollective.com/typeorm",
   "collective": {
